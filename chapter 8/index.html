@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 8</title>
+  </head>
+  <body>
+    <form action="../chapter 7/index.html">
+      <label for="firstName">First Name</label>
+      <br />
+      <input id="firstName" name="firstName" required / >
+      <br />
+      <label for="lastName">Last Name</label>
+      <br />
+      <input id="lastName" name="lastName" pattern="[Bb]anana|[Cc]herry" / >
+      <br />
+      <label for="rollNo">Roll No.</label>
+      <br />
+      <input id="rollNo" min="0" max="10" value="5" name="rollNo" type="number"
+      / >
+      <p>Select Your Gender</p>
+      <input type="radio" name="gender" id="male" />
+      <label for="male"> Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female"> Female</label>
+      <input type="radio" name="gender" id="others" />
+      <label for="others"> Others</label>
+      <br />
+      <label for="class">Select Class</label>
+      <br />
+      <select name="" id="class">
+        <option value="">Select Your Class</option>
+        <option value="1">Class 1</option>
+        <option value="2">Class 2</option>
+        <option value="3">Class 3</option>
+        <option value="4">Class 4</option>
+        <option value="5">Class 5</option>
+      </select>
+      <label for="ice-cream-choice">Choose a flavor:</label>
+      <input
+        list="ice-cream-flavors"
+        id="ice-cream-choice"
+        name="ice-cream-choice"
+      />
+
+      <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+
+      <label for="about"> About my selft</label>
+      <textarea name="about" id="about" cols="30" rows="10"></textarea>
+      <button type="reset">reset</button>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
